@@ -1,0 +1,186 @@
+/** CSS-Stylesheet
+*	author: HTL Leonding
+**/
+
+/************* general setting *************/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    background-color: #636366;
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+* {
+	box-sizing: border-box;
+}
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+	font-weight: 400;
+}
+p {
+	margin: 0;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+/* colors */
+.it { background-color: rgba(0,80,157,0.7);}
+.it:hover { background-color: rgba(0,80,157,1) !important;}
+#informatik #wrapper {background-color: rgba(0,80,157,0.3);}
+.medt { background-color: rgba(105,180,216,0.7);}
+.medt:hover {background-color: rgba(105,180,216,1) !important;;}
+#medientechnik #wrapper {background-color: rgba(105,180,216,0.3);}
+.et {background-color: rgba(186,7,36,0.7);}
+.et:hover {background-color: rgba(186,7,36,1) !important;;}
+#elektronik #wrapper {background-color: rgba(186,7,36,0.3);}
+.medz {background-color: rgba(237,135,0,0.7);}
+.medz:hover {background-color: rgba(237,135,0,1) !important;;}
+#medizintechnik #wrapper {background-color: rgba(237,135,0,0.3);}
+
+
+
+/************* wrapper *************/
+#wrapper {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+
+/************* header *************/
+header {
+	padding: 3% 0;
+}
+header h1 {
+	font-size: 300%;
+	font-weight: 500;
+}
+
+
+
+/************* main *************/
+main .video {
+	position: relative;
+	width: 90%;
+	padding-top: 50.625%; /* 16:9 according to width*/
+	margin-left: auto;
+	margin-right: auto;
+	height: 0;
+	margin-bottom: 3%;
+}
+main .video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+main .banner {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+main .banner img {
+	width: 100%;
+}
+
+
+
+/************* nav *************/
+nav {
+	margin-bottom: 3%;
+}
+nav a {
+	display: block;
+    width: 100%;
+	padding: 5% 0;
+}
+nav h2 {
+	font-size: 100%;
+    margin: 0;
+}
+/* nav with images */
+nav.nav-img {
+	margin-bottom: 0;
+}
+nav.nav-img img {
+    width: 100%;
+	padding: 5%;
+}
+nav.nav-img h2 {
+	font-size: 150%;
+}
+nav.nav-img a {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+
+
+
+/************* footer *************/
+footer {
+	padding: 3% 0;
+	text-align: center;
+}
+footer a {
+    font-style: italic;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/************* responsive design ***************/
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*** mobile devices ***/
+.small-1 {
+	width: 25%;
+}
+.small-2 {
+	width: 50%;
+}
+.small-3 {
+	width: 75%;
+}
+.small-4 {
+	width: 100%;
+}
+
+
+
+/*** desktop devices > 780px ***/
+@media only screen and (min-width: 881px) {
+	.large-1 {
+		width: 25%;
+	}
+	.large-2 {
+		width: 50%;
+	}
+	.large-3 {
+		width: 75%;
+	}
+	.large-4 {
+		width: 100%;
+	}
+}
