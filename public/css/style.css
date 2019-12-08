@@ -184,3 +184,27 @@ footer a:hover {
 		width: 100%;
 	}
 }
+
+main.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.column {
+	width: 50%;
+}
+
+.small {
+	width: 25%;
+}
+
+@media screen and (max-device-width: 800px) and (min-device-width: 0) {
+	.column {
+		width: 100%;
+	}
+
+	small {
+		width: 100%;
+	}
+}
